@@ -93,7 +93,7 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>Src/stm32f7xx_nucleo_144.c</name>
+			<name>Core/Src/stm32f7xx_nucleo_144.c</name>
 			<type>1</type>
 			<locationURI>STM32CUBE/Drivers/BSP/STM32F7xx_Nucleo_144/stm32f7xx_nucleo_144.c</locationURI>
 		</link>

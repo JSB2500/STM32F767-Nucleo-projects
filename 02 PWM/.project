@@ -26,22 +26,22 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>Inc/JSB_General.h</name>
+			<name>Core/Inc/JSB_General.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/JSBLibrary/JSB_General.h</locationURI>
 		</link>
 		<link>
-			<name>Inc/JSB_STM32F767ZINucleo144.h</name>
+			<name>Core/Inc/JSB_STM32F767ZINucleo144.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/JSBLibrary/JSB_STM32F767ZINucleo144.h</locationURI>
 		</link>
 		<link>
-			<name>Src/JSB_General.c</name>
+			<name>Core/Src/JSB_General.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/JSBLibrary/JSB_General.c</locationURI>
 		</link>
 		<link>
-			<name>Src/JSB_STM32F767ZINucleo144.c</name>
+			<name>Core/Src/JSB_STM32F767ZINucleo144.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/JSBLibrary/JSB_STM32F767ZINucleo144.c</locationURI>
 		</link>

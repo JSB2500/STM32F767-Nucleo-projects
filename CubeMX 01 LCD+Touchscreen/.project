@@ -27,37 +27,37 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>Inc/JSB_General.h</name>
+			<name>Core/Inc/JSB_General.h</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Shared/JSB_General.h</locationURI>
 		</link>
 		<link>
-			<name>Inc/JSB_ILI9341.h</name>
+			<name>Core/Inc/JSB_ILI9341.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-WORKSPACE_LOC/Shared/JSB_ILI9341.h</locationURI>
 		</link>
 		<link>
-			<name>Inc/stm32f7xx_nucleo_144.h</name>
+			<name>Core/Inc/stm32f7xx_nucleo_144.h</name>
 			<type>1</type>
 			<locationURI>STM32CUBE/Drivers/BSP/STM32F7xx_Nucleo_144/stm32f7xx_nucleo_144.h</locationURI>
 		</link>
 		<link>
-			<name>Src/JSB_General.c</name>
+			<name>Core/Src/JSB_General.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Shared/JSB_General.c</locationURI>
 		</link>
 		<link>
-			<name>Src/JSB_ILI9341.c</name>
+			<name>Core/Src/JSB_ILI9341.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-WORKSPACE_LOC/Shared/JSB_ILI9341.c</locationURI>
 		</link>
 		<link>
-			<name>Src/JSB_XPT2046.c</name>
+			<name>Core/Src/JSB_XPT2046.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-WORKSPACE_LOC/Shared/JSB_XPT2046.c</locationURI>
 		</link>
 		<link>
-			<name>Src/stm32f7xx_nucleo_144.c</name>
+			<name>Core/Src/stm32f7xx_nucleo_144.c</name>
 			<type>1</type>
 			<locationURI>STM32CUBE/Drivers/BSP/STM32F7xx_Nucleo_144/stm32f7xx_nucleo_144.c</locationURI>
 		</link>
