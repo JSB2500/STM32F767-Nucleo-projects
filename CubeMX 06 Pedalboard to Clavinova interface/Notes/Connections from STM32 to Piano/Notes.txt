@@ -1,0 +1,3 @@
+Serial MIDI from STM32 to piano:
+=> PC6 (USART6-TX) to pin 2 (in 1 2 3 4 5 numbering system) or 4 (in 1 4 2 5 3 numbering system) of serial "MIDI In" via a 220R resistor.
+=> 5V to pin 4 (in 1 2 3 4 5 numbering system) or 5 (in 14253 numbering system) of serial "MIDI In" via a 220R resistor.

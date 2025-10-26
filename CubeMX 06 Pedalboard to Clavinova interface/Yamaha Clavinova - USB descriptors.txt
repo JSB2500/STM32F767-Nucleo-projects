@@ -1,0 +1,134 @@
+
+    =========================== USB Port3 ===========================
+
+Connection Status        : 0x01 (Device is connected)
+Port Chain               : 1-3
+
+      ======================== USB Device ========================
+
+        +++++++++++++++++ Device Information ++++++++++++++++++
+Device Description       : Yamaha USB-MIDI Driver (WDM)
+Device Path              : \\?\usb#vid_0499&pid_1035#6&16e93356&0&3#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
+Device ID                : USB\VID_0499&PID_1035\6&16E93356&0&3
+Hardware IDs             : USB\VID_0499&PID_1035&REV_0100 USB\VID_0499&PID_1035
+Driver KeyName           : {4d36e96c-e325-11ce-bfc1-08002be10318}\0011 (GUID_DEVCLASS_MEDIA)
+Driver                   : C:\Windows\system32\drivers\ymidusbx64.sys (Version: 3.1.4.0  Date: 2015-07-28)
+Driver Inf               : C:\Windows\inf\oem63.inf
+Legacy BusType           : PNPBus
+Class                    : MEDIA
+Class GUID               : {4d36e96c-e325-11ce-bfc1-08002be10318} (GUID_DEVCLASS_MEDIA)
+Interface GUID           : {a5dcbf10-6530-11d2-901f-00c04fb951ed} (GUID_DEVINTERFACE_USB_DEVICE)
+Service                  : YMIDUSBW
+Enumerator               : USB
+Location Info            : Port_#0003.Hub_#0001
+Location IDs             : PCIROOT(0)#PCI(1C02)#PCI(0000)#USBROOT(0)#USB(3)
+Container ID             : {2e706704-1628-11e6-b8ae-c80aa9dfec79}
+Manufacturer Info        : Yamaha Corporation.
+Capabilities             : 0x04 (Removable)
+Status                   : 0x0180600A (DN_DRIVER_LOADED, DN_STARTED, DN_DISABLEABLE, DN_REMOVABLE, DN_NT_ENUMERATOR, DN_NT_DRIVER)
+Problem Code             : 0
+Power State              : D0 (supported: D0, D2, D3, wake from D0, wake from D2)
+
+        ---------------- Connection Information ---------------
+Connection Index         : 0x03 (3)
+Connection Status        : 0x01 (DeviceConnected)
+Current Config Value     : 0x01
+Device Address           : 0x01 (1)
+Is Hub                   : 0x00 (no)
+Number Of Open Pipes     : 0x02 (2)
+Device Bus Speed         : 0x01 (Full-Speed)
+Pipe0ScheduleOffset      : 0x00 (0)
+Pipe1ScheduleOffset      : 0x00 (0)
+
+        ------------------ Device Descriptor ------------------
+bLength                  : 0x12 (18 bytes)
+bDescriptorType          : 0x01 (Device Descriptor)
+bcdUSB                   : 0x110 (USB Version 1.10)
+bDeviceClass             : 0x00 (defined by the interface descriptors)
+bDeviceSubClass          : 0x00
+bDeviceProtocol          : 0x00
+bMaxPacketSize0          : 0x08 (8 bytes)
+idVendor                 : 0x0499 (Yamaha Corporation)
+idProduct                : 0x1035
+bcdDevice                : 0x0100
+iManufacturer            : 0x01 (String Descriptor 1)
+ Language 0x0409         : "YAMAHA Corporation"
+iProduct                 : 0x02 (String Descriptor 2)
+ Language 0x0409         : "Clavinova"
+iSerialNumber            : 0x00 (No String Descriptor)
+bNumConfigurations       : 0x01
+
+        ------------------ String Descriptors -----------------
+             ------ String Descriptor 0 ------
+bLength                  : 0x04 (4 bytes)
+bDescriptorType          : 0x03 (String Descriptor)
+Language ID[0]           : 0x0409 (English - United States)
+             ------ String Descriptor 1 ------
+bLength                  : 0x26 (38 bytes)
+bDescriptorType          : 0x03 (String Descriptor)
+Language 0x0409          : "YAMAHA Corporation"
+             ------ String Descriptor 2 ------
+bLength                  : 0x14 (20 bytes)
+bDescriptorType          : 0x03 (String Descriptor)
+Language 0x0409          : "Clavinova"
+
+      ---------------- Configuration Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x02 (Configuration Descriptor)
+wTotalLength             : 0x003F (63 bytes)
+bNumInterfaces           : 0x01
+bConfigurationValue      : 0x01
+iConfiguration           : 0x00 (No String Descriptor)
+bmAttributes             : 0xC0
+ D7: Reserved, set 1     : 0x01
+ D6: Self Powered        : 0x01 (yes)
+ D5: Remote Wakeup       : 0x00 (no)
+ D4..0: Reserved, set 0  : 0x00
+MaxPower                 : 0x00 (0 mA)
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x00
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0xFF (Vendor Specific)
+bInterfaceSubClass       : 0x00
+bInterfaceProtocol       : 0xFF
+iInterface               : 0x00 (No String Descriptor)
+
+        ----------------- Unknown Descriptor ------------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x24
+Data (HexDump)           : 07 24 01 00 01 2D 00 
+
+        ----------------- Unknown Descriptor ------------------
+bLength                  : 0x06 (6 bytes)
+bDescriptorType          : 0x24
+Data (HexDump)           : 06 24 02 02 01 00 
+
+        ----------------- Unknown Descriptor ------------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x24
+Data (HexDump)           : 09 24 03 02 01 01 01 01 00 
+
+        ----------------- Unknown Descriptor ------------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x24
+Data (HexDump)           : 09 24 03 02 02 01 01 01 00 
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x82 (Direction=IN EndpointID=2)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x01 (ignored)
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x01 (Direction=OUT EndpointID=1)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x01 (ignored)

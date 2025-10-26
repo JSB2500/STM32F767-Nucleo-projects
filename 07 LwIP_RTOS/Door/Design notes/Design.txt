@@ -1,0 +1,7 @@
+Remote server:
+--------------
+=> Has two ports:
+   => Port 59467 for smartphone client etc.
+   => Port 18753 for lock client (currently Arduino).
+=> Device: OVH VPS.
+=> IP: 137.74.43.80

@@ -1,0 +1,4 @@
+Outputs text at 115200 baud on USART3, which is:
+=> The Rx pin of CN5. It's called Rx because it is Rx wrt the ST-Link chip.
+=> PD8 of the MCU.
+=> Pin 10 of CN12 (assuming SB 7 is linked, which it currently is).
