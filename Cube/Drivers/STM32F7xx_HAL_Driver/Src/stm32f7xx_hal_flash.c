@@ -70,12 +70,14 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.
+  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.</center></h2>
   *
-  * This software is licensed under terms that can be found in the LICENSE file in
-  * the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
+  *
   ******************************************************************************
   */ 
 
@@ -109,13 +111,7 @@
   * @{
   */
 /* Variable used for Erase sectors under interruption */
-FLASH_ProcessTypeDef pFlash  = {.ProcedureOnGoing = FLASH_PROC_NONE,
-                                .NbSectorsToErase = 0U,
-                                .VoltageForErase= FLASH_VOLTAGE_RANGE_1,
-                                .Sector = 0U,
-                                .Address = 0U,
-                                .Lock = HAL_UNLOCKED,
-                                .ErrorCode = HAL_FLASH_ERROR_NONE};
+FLASH_ProcessTypeDef pFlash;
 /**
   * @}
   */
@@ -167,7 +163,7 @@ HAL_StatusTypeDef FLASH_WaitForLastOperation(uint32_t Timeout);
   */
 HAL_StatusTypeDef HAL_FLASH_Program(uint32_t TypeProgram, uint32_t Address, uint64_t Data)
 {
-  HAL_StatusTypeDef status;
+  HAL_StatusTypeDef status = HAL_ERROR;
   
   /* Process Locked */
   __HAL_LOCK(&pFlash);
@@ -664,13 +660,8 @@ static void FLASH_Program_DoubleWord(uint32_t Address, uint64_t Data)
   FLASH->CR |= FLASH_PSIZE_DOUBLE_WORD;
   FLASH->CR |= FLASH_CR_PG;
 
-  /* Program first word */
+  /* Program the double-word */
   *(__IO uint32_t*)Address = (uint32_t)Data;
-  /* Barrier to ensure programming is performed in 2 steps, in right order
-    (independently of compiler optimization behavior) */
-  __ISB();
-
-  /* Program second word */
   *(__IO uint32_t*)(Address+4) = (uint32_t)(Data >> 32);
 
   /* Data synchronous Barrier (DSB) Just after the write operation
@@ -682,7 +673,7 @@ static void FLASH_Program_DoubleWord(uint32_t Address, uint64_t Data)
 /**
   * @brief  Program word (32-bit) at a specified address.
   * @note   This function must be used when the device voltage range is from
-  *         2.7V to 3.3V.
+  *         2.7V to 3.6V.
   *
   * @note   If an erase and a program operations are requested simultaneously,    
   *         the erase operation is performed before the program one.
@@ -711,7 +702,7 @@ static void FLASH_Program_Word(uint32_t Address, uint32_t Data)
 /**
   * @brief  Program a half-word (16-bit) at a specified address.
   * @note   This function must be used when the device voltage range is from
-  *         2.1V to 3.6V.
+  *         2.7V to 3.6V.
   *
   * @note   If an erase and a program operations are requested simultaneously,    
   *         the erase operation is performed before the program one.
@@ -741,7 +732,7 @@ static void FLASH_Program_HalfWord(uint32_t Address, uint16_t Data)
 /**
   * @brief  Program byte (8-bit) at a specified address.
   * @note   This function must be used when the device voltage range is from
-  *         1.7V to 3.6V.
+  *         2.7V to 3.6V.
   *
   * @note   If an erase and a program operations are requested simultaneously,    
   *         the erase operation is performed before the program one.
@@ -823,3 +814,4 @@ static void FLASH_SetErrorCode(void)
   * @}
   */
 
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

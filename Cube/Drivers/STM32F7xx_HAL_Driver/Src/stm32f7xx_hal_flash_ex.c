@@ -42,12 +42,14 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.
+  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.</center></h2>
   *
-  * This software is licensed under terms that can be found in the LICENSE file in
-  * the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
+  *
   ******************************************************************************
   */ 
 
@@ -155,7 +157,7 @@ extern HAL_StatusTypeDef  FLASH_WaitForLastOperation(uint32_t Timeout);
   */
 HAL_StatusTypeDef HAL_FLASHEx_Erase(FLASH_EraseInitTypeDef *pEraseInit, uint32_t *SectorError)
 {
-  HAL_StatusTypeDef status;
+  HAL_StatusTypeDef status = HAL_ERROR;
   uint32_t index = 0;
   
   /* Process Locked */
@@ -1117,3 +1119,4 @@ static uint32_t FLASH_OB_GetPCROPRDP(void)
   * @}
   */
 
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -323,7 +323,7 @@
 		<link>
 			<name>Middlewares/LwIP/fs.c</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/Cube/Middlewares/Third_Party/LwIP/src/apps/http/fs.c</locationURI>
+			<locationURI>WORKSPACE_LOC/Cube/Middlewares/Third_Party/LwIP/src/apps/httpd/fs.c</locationURI>
 		</link>
 		<link>
 			<name>Middlewares/LwIP/fsm.c</name>
