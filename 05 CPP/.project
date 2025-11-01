@@ -94,9 +94,5 @@
 		</link>
 	</linkedResources>
 	<variableList>
-		<variable>
-			<name>PROJECT_ROOT</name>
-			<value>$%7BPARENT-2-PROJECT_LOC%7D</value>
-		</variable>
 	</variableList>
 </projectDescription>

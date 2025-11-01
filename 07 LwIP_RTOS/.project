@@ -596,10 +596,4 @@
 			<locationURI>WORKSPACE_LOC/Cube/Drivers/BSP/STM32F7xx_Nucleo_144/stm32f7xx_nucleo_144.c</locationURI>
 		</link>
 	</linkedResources>
-	<variableList>
-		<variable>
-			<name>PROJECT_ROOT</name>
-			<value>$%7BPARENT-1-PROJECT_LOC%7D</value>
-		</variable>
-	</variableList>
 </projectDescription>
