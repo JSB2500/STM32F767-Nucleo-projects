@@ -38,17 +38,17 @@
 		<link>
 			<name>Core/Inc/JSB_STM32F767ZINucleo144.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/JSBLibrary/JSB_STM32F767ZINucleo144.h</locationURI>
+			<locationURI>WORKSPACE_LOC/JSBLibrary/JSB_STM32F767ZINucleo144.h</locationURI>
 		</link>
 		<link>
 			<name>Core/Src/JSB_General.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/JSBLibrary/JSB_General.c</locationURI>
+			<locationURI>WORKSPACE_LOC/JSBLibrary/JSB_General.c</locationURI>
 		</link>
 		<link>
 			<name>Core/Src/JSB_STM32F767ZINucleo144.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/JSBLibrary/JSB_STM32F767ZINucleo144.c</locationURI>
+			<locationURI>WORKSPACE_LOC/JSBLibrary/JSB_STM32F767ZINucleo144.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/STM32F7xx_HAL_Driver/stm32f7xx_hal.c</name>
