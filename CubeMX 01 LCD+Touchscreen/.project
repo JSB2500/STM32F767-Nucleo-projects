@@ -33,12 +33,12 @@
 		<link>
 			<name>Core/Inc/JSB_General.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Shared/JSB_General.h</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_General.h</locationURI>
 		</link>
 		<link>
 			<name>Core/Inc/JSB_ILI9341.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-WORKSPACE_LOC/Shared/JSB_ILI9341.h</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_ILI9341.h</locationURI>
 		</link>
 		<link>
 			<name>Core/Inc/stm32f7xx_nucleo_144.h</name>
@@ -48,17 +48,17 @@
 		<link>
 			<name>Core/Src/JSB_General.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Shared/JSB_General.c</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_General.c</locationURI>
 		</link>
 		<link>
 			<name>Core/Src/JSB_ILI9341.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-WORKSPACE_LOC/Shared/JSB_ILI9341.c</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_ILI9341.c</locationURI>
 		</link>
 		<link>
 			<name>Core/Src/JSB_XPT2046.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-WORKSPACE_LOC/Shared/JSB_XPT2046.c</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_XPT2046.c</locationURI>
 		</link>
 		<link>
 			<name>Core/Src/stm32f7xx_nucleo_144.c</name>
