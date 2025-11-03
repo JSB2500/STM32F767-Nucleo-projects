@@ -13,6 +13,40 @@
 //#define ServerIP "151.80.60.118" /* JSB Remote test server (OVH) */
 #define ServerDoorClientPort 18753
 
+#if JSBGeneral_Sockets
+#include <sys/time.h>
+#include "lwip/sys.h"
+#include "lwip/sockets.h"
+#endif
+
+int JSB_Sockets_Connect(const char *IP, u16_t Port, int SocketType)
+{
+  int fdSocket;
+  struct sockaddr_in RemoteAddress;
+
+  errno = 0;
+  if ((fdSocket = socket(PF_INET, SocketType, 0)) < 0)
+  {
+    printf("Sockets: Failed to create socket. Socket error: %d.\r\n", errno);
+    return -1;
+  }
+
+  memset(&RemoteAddress, 0, sizeof(RemoteAddress));
+  RemoteAddress.sin_family = AF_INET;
+  RemoteAddress.sin_addr.s_addr = inet_addr(IP);
+  RemoteAddress.sin_port = htons(Port);
+
+  errno = 0;
+  if (connect(fdSocket, (struct sockaddr *)&RemoteAddress, sizeof(RemoteAddress)) < 0)
+  {
+    printf("Sockets: Failed to connect. Socket error: %d.\r\n", errno);
+    close(fdSocket);
+    return -1;
+  }
+
+  return fdSocket;
+}
+
 static void DoorLockClientThread(void *arg)
 {
   int fdClientSocket;

@@ -33,7 +33,7 @@
 		<link>
 			<name>Core/Inc/JSB_General.h</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/JSBLibrary/JSB_General.h</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_General.h</locationURI>
 		</link>
 		<link>
 			<name>Core/Inc/JSB_STM32F767ZINucleo144.h</name>
@@ -43,7 +43,7 @@
 		<link>
 			<name>Core/Src/JSB_General.c</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/JSBLibrary/JSB_General.c</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_General.c</locationURI>
 		</link>
 		<link>
 			<name>Core/Src/JSB_STM32F767ZINucleo144.c</name>

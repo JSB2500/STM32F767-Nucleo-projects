@@ -63,8 +63,8 @@ void InitializeTimer(TIM_HandleTypeDef *pTimerHandle, TIM_TypeDef *pTimer, uint3
 
 void SetBrightness(TIM_HandleTypeDef *pTimerHandle, uint32_t i_PhaseABrightness, uint32_t i_PhaseBBrightness, uint32_t i_Range, uint32_t i_ChannelA, uint32_t i_ChannelB)
 {
-  i_PhaseABrightness = clamp(i_PhaseABrightness, 0, i_Range);
-  i_PhaseBBrightness = clamp(i_PhaseBBrightness, 0, i_Range);
+  i_PhaseABrightness = Clamp_uint32(i_PhaseABrightness, 0, i_Range);
+  i_PhaseBBrightness = Clamp_uint32(i_PhaseBBrightness, 0, i_Range);
 
   JSB_Timer_SetCaptureCompareRegister(pTimerHandle, i_ChannelA, i_PhaseABrightness);
   JSB_Timer_SetCaptureCompareRegister(pTimerHandle, i_ChannelB, 2 * i_Range - i_PhaseBBrightness);

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "stm32f7xx_nucleo_144.h"
 #include "JSB_General.h"
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -228,6 +229,49 @@ void GUIDToString(GUID_t *i_Value, char *o_Value)
 uint8_t GUID_IsEqual(GUID_t *pA, GUID_t *pB)
 {
   return memcmp(pA, pB, sizeof(GUID_t)) == 0 ? 1 : 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+void JSB_ErrorHandler()
+{
+//  while (1)
+//  {
+//    for (int Index = 0; Index < 3; ++Index)
+//    {
+//      BSP_LED_On(LED1);
+//      BSP_LED_On(LED2);
+//      BSP_LED_On(LED3);
+//      HAL_Delay(100);
+//      BSP_LED_Off(LED1);
+//      BSP_LED_Off(LED2);
+//      BSP_LED_Off(LED3);
+//      HAL_Delay(100);
+//    }
+//    HAL_Delay(1000);
+//  }
+
+// JSB: Version that doesn't use HAL_Delay/osDelay as these functions fail during error conditions.
+// JSB: The flash rate will depend on the clock speeds, however.
+  while (1)
+  {
+    for (int Index = 0; Index < 3; ++Index)
+    {
+      for (int Duration = 0; Duration < 1000000; ++Duration)
+      {
+        BSP_LED_On(LED1);
+        BSP_LED_On(LED2);
+        BSP_LED_On(LED3);
+      }
+
+      for (int Duration = 0; Duration < 1000000; ++Duration)
+      {
+        BSP_LED_Off(LED1);
+        BSP_LED_Off(LED2);
+        BSP_LED_Off(LED3);
+      }
+    }
+  }
 }
 
 ///////////////////////////////////////////////////////////////////////////////

@@ -53,6 +53,7 @@
 									<listOptionValue builtIn="false" value="${workspace_loc}/Cube/Middlewares/Third_Party/FreeRTOS/Source/"/>
 									<listOptionValue builtIn="false" value="${workspace_loc}/Cube/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc}/Cube/Middlewares/Third_Party/FreeRTOS/Source/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc}/Shared&quot;"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols.570101760" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="STM32F767xx"/>

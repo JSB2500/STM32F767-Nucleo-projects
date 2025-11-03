@@ -25,7 +25,7 @@ static void GeneralServerConnectionThread(void *arg)
     if (ReadReturnValue <= 0)
       break;
 
-    ReadBuffer[min(ReadReturnValue, ReadBufferLength - 1)] = 0; // NULL terminator.
+    ReadBuffer[Min_int32(ReadReturnValue, ReadBufferLength - 1)] = 0; // NULL terminator.
 
     printf((char *)ReadBuffer);
   }

@@ -76,8 +76,8 @@ static void InitializeTimer()
 
 static void SetBrightness(uint32_t i_PhaseABrightness, uint32_t i_PhaseBBrightness)
 {
-  i_PhaseABrightness = clamp(i_PhaseABrightness, 0, BrightnessRange);
-  i_PhaseBBrightness = clamp(i_PhaseBBrightness, 0, BrightnessRange);
+  i_PhaseABrightness = Clamp_uint32(i_PhaseABrightness, 0, BrightnessRange);
+  i_PhaseBBrightness = Clamp_uint32(i_PhaseBBrightness, 0, BrightnessRange);
 
   JSB_Timer_SetCaptureCompareRegister(&TimerHandle, TIM_CHANNEL_1, i_PhaseABrightness);
   JSB_Timer_SetCaptureCompareRegister(&TimerHandle, TIM_CHANNEL_2, 2 * BrightnessRange - i_PhaseBBrightness);
