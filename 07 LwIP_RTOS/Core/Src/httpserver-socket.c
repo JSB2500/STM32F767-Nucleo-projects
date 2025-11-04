@@ -46,7 +46,7 @@
  */
 
 #include "string.h"
-#include "JSB_STM32F767ZINucleo144.h"
+#include "JSB_STM32F767_Nucleo144.h"
 #include "JSB_General.h"
 #include "main.h" // For Error_Handler().
 #include "httpserver-socket.h"

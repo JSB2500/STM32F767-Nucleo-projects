@@ -2,7 +2,7 @@
 #include "string.h"
 #include "main.h"
 #include "stm32f7xx_nucleo_144.h"
-#include "JSB_STM32F767ZINucleo144.h"
+#include "JSB_STM32F767_Nucleo144.h"
 #include "JSB_General.h"
 
 #define BrightnessRange (1000U)

@@ -1,6 +1,6 @@
 #include "stdio.h"
 #include "main.h"
-#include "JSB_STM32F767ZINucleo144.h"
+#include "JSB_STM32F767_Nucleo144.h"
 #include "stm32f7xx_nucleo_144.h"
 
 int main(void)

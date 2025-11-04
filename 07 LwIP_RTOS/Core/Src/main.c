@@ -20,7 +20,7 @@
 #include "stdarg.h"
 #include "string.h"
 #include "JSB_General.h"
-#include "JSB_STM32F767ZINucleo144.h"
+#include "JSB_STM32F767_Nucleo144.h"
 //
 #include "main.h"  // Include before lwIP as it contains "USE_DHCP" define.
 //

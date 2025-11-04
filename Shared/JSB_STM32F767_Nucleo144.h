@@ -14,7 +14,7 @@
 //    => Lines will not normally appear on PuTTY until "\r\n" is sent.
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "JSB_STM32F767ZINucleo144Options.h"
+#include "JSB_STM32F767_Nucleo144Options.h"
 
 #include "stm32f767xx.h"
 
@@ -45,6 +45,8 @@ int JSB_GetUserButtonPressed();
   int JSB_Timer_ConfigureChannel(TIM_HandleTypeDef *pTimerHandle, uint32_t Channel, uint32_t Mode, uint32_t Polarity, uint32_t PulseLength);
   void JSB_Timer_SetCaptureCompareRegister(TIM_HandleTypeDef *pTimerHandle, uint32_t Channel, uint32_t Value);
 #endif
+
+void JSB_ErrorHandler();
 
 #ifdef __cplusplus
 }
